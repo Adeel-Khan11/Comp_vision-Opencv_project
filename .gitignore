@@ -1,11 +1,15 @@
-# Python
+﻿# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.so
-*.egg-info/
-*.pyc
+*$py.class
 
-# virtual environments
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
 .venv/
 venv/
 env/
@@ -15,18 +19,27 @@ myvenv/
 # VS Code
 .vscode/
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
-
-# JetBrains
-/.idea/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Logs
+# Logs and databases
 *.log
+*.sqlite3
 
-# other
+# Secrets / env files
 .env
+.env.*
+
+# Editor folders
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Datasets / models (adjust to your actual folders)
+data/
+datasets/
+models/
