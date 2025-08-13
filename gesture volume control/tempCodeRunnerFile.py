@@ -1,0 +1,6 @@
+devices = AudioUtilities.GetSpeakers()
+interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+volume = cast(interface, POINTER(IAudioEndpointVolume))
+min_vol, max_vol, step = volume.GetVolumeRange()
+print(f"Volume range: {min_vol} dB to {max_vol} dB, step {step} dB")
+volume.SetMasterVolumeLevel(-5.0,None)
