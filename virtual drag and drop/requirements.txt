@@ -1,4 +1,5 @@
-mediapipe==0.10.9
+mediapipe==0.10.21
+cvzone
 opencv-python==4.9.0.80
 numpy
 pandas

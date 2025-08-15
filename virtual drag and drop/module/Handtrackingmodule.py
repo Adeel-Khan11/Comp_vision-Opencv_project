@@ -44,15 +44,8 @@ class handDetector():
                 if draw:
                     cv2.circle(image,(cx,cy),5,(255,0,255),cv2.FILLED)
         return ldlist
-    
     def findDistance(self, p1, p2, image, draw=True):
-        """
-        Returns: (length, info, image)
-        info is (x1,y1,x2,y2,cx,cy)
-        Example usage:
-            l, info, img = detector.findDistance(8,12,image)
-            # or l,_,_ = detector.findDistance(8,12,image)
-        """
+       
         lmList = self.findpos(image, draw=False)
         if not lmList:
             return 0, None, image
@@ -81,6 +74,7 @@ class handDetector():
         info = (x1, y1, x2, y2, cx, cy)
         return int(length), info, image
     # ---------------- end addition -----------------------------
+        
 
   
     
